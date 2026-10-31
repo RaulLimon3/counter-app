@@ -9,8 +9,7 @@ increaseBtn.addEventListener('click', (e) => {
     if (!e.target.closest('.btn')) return;
     count++;
     if (count > 0) {
-        decreaseBtn.classList.remove('btn-disabled');
-        resetBtn.classList.remove('btn-disabled');
+        enabledBtn(decreaseBtn, resetBtn);
     }
     number.textContent = count;
 });
@@ -18,9 +17,8 @@ increaseBtn.addEventListener('click', (e) => {
 decreaseBtn.addEventListener('click', (e) => {
     if (!e.target.closest('.btn')) return;
     count--;
-    if (count <= 0) {
-        decreaseBtn.classList.add('btn-disabled');
-        resetBtn.classList.add('btn-disabled');
+    if (count === 0) {
+        disabledBtn(decreaseBtn, resetBtn);
     }
     number.textContent = count;
 });
@@ -28,7 +26,20 @@ decreaseBtn.addEventListener('click', (e) => {
 resetBtn.addEventListener('click', (e) => {
     if (!e.target.closest('.btn')) return;
     count = 0;
-    decreaseBtn.classList.add('btn-disabled');
-    resetBtn.classList.add('btn-disabled');
+    disabledBtn(decreaseBtn, resetBtn);
     number.textContent = count
 });
+
+const disabledBtn = (...buttons) => {
+    buttons.forEach(button => {
+        button.classList.add('btn-disabled');
+        button.disabled = true;
+    });
+};
+
+const enabledBtn = (...buttons) => {
+    buttons.forEach(button => {
+        button.classList.remove('btn-disabled');
+        button.disabled = false;
+    });
+};
