@@ -5,29 +5,24 @@ const resetBtn = document.getElementById('btnReset');
 
 let count = 0;
 
-increaseBtn.addEventListener('click', (e) => {
-    if (!e.target.closest('.btn')) return;
+increaseBtn.addEventListener('click', () => {
     count++;
-    if (count > 0) {
-        enabledBtn(decreaseBtn, resetBtn);
-    }
+    enabledBtn(decreaseBtn, resetBtn);
     number.textContent = count;
 });
 
-decreaseBtn.addEventListener('click', (e) => {
-    if (!e.target.closest('.btn')) return;
+decreaseBtn.addEventListener('click', () => {
     count--;
-    if (count === 0) {
+    number.textContent = count;
+    if (count <= 0) {
         disabledBtn(decreaseBtn, resetBtn);
     }
-    number.textContent = count;
 });
 
-resetBtn.addEventListener('click', (e) => {
-    if (!e.target.closest('.btn')) return;
+resetBtn.addEventListener('click', () => {
     count = 0;
     disabledBtn(decreaseBtn, resetBtn);
-    number.textContent = count
+    number.textContent = count;
 });
 
 const disabledBtn = (...buttons) => {
