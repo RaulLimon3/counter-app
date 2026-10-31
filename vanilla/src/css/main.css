@@ -42,6 +42,12 @@
     transition: background 0.3s ease-in, transform 0.1s, box-shadow 0.1s;
 }
 
+.btn-disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 .btn:active {
     transform: translate(4px 4px);
     box-shadow: 0 0 0 var(--color-neutral-900);
