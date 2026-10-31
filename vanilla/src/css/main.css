@@ -1,2 +1,52 @@
 @import url('./base/normalize.css');
 @import url('./base/reset.css');
+
+.container {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.digit-number {
+    font-size: 64px;
+    text-align: center;
+}
+
+.cta-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    background: initial;
+    color: #FCFCFC;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.btn-increase {
+    background: #06D6A0;
+}
+
+.btn-reset {
+    background: #26547C;
+}
+
+.btn-decrease {
+    background: #EF476F;
+}
