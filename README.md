@@ -6,7 +6,7 @@ A responsive and accessible counter app built with vanilla JavaScript, featuring
 
 ## 🚀 Live Demo
 
-🔗  [Try the Counter App here]
+🔗  [Try the Counter App here](https://counter-app-pearl-chi.vercel.app)
 
 ---
 
