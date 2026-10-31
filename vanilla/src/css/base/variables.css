@@ -65,4 +65,20 @@
     --color-neutral-700: #666666;
     --color-neutral-800: #3D3D3D;
     --color-neutral-900: #202124;
+
+    /* Background colors */
+    --bg-color: var(--color-neutral-100);
+    --btn-increase-color: var(--color-green-500);
+    --btn-increase-color-hover: var(--color-green-600);
+    --btn-increase-color-active: var(--color-green-800);
+    --btn-decrease-color: var(--color-pink-500);
+    --btn-decrease-color-hover: var(--color-pink-600);
+    --btn-decrease-color-active: var(--color-pink-800);
+    --btn-reset-color: var(--color-blue-500);
+    --btn-reset-color-hover: var(--color-blue-600);
+    --btn-reset-color-active: var(--color-blue-800);
+
+    /* Text colors */
+    --color-text-primary: var(--color-neutral-900);
+    --color-text-secondary: var(--color-neutral-700);
 }

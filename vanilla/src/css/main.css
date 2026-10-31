@@ -1,5 +1,6 @@
 @import url('./base/normalize.css');
 @import url('./base/reset.css');
+@import url('./base/variables.css');
 
 .container {
     width: 100dvw;
@@ -34,19 +35,43 @@
     width: 100%;
     padding: 8px;
     border-radius: 8px;
-    background: initial;
     color: #FCFCFC;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: background 0.3s ease-in;
 }
 
 .btn-increase {
-    background: #06D6A0;
+    background: var(--color-green-500);
+}
+
+.btn-increase:hover {
+    background: var(--btn-increase-color-hover);
+}
+
+.btn-increase:active {
+    background: var(--btn-increase-color-active);
 }
 
 .btn-reset {
-    background: #26547C;
+    background: var(--color-blue-500);
+}
+
+.btn-reset:hover {
+    background: var(--btn-reset-color-hover);
+}
+
+.btn-reset:active {
+    background: var(--btn-reset-color-active);
 }
 
 .btn-decrease {
-    background: #EF476F;
+    background: var(--color-pink-500);
+}
+
+.btn-decrease:hover {
+    background: var(--btn-decrease-color-hover);
+}
+
+.btn-decrease:active {
+    background: var(--btn-decrease-color-active);
 }
