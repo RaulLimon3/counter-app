@@ -12,7 +12,23 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <main class="container">
+    <h1 class="title">Counter App</h1>
+    <div class="digit-number">
+      <output class="number" id="number" aria-live="polite">0</output>
+    </div>
+    <div class="cta-buttons">
+      <button type="button" class="btn btn-increase" id="btnIncrease" aria-label="Increase one">
+        <i data-lucide="plus" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="btn btn-reset" id="btnReset" aria-label="Reset value">
+        <i data-lucide="rotate-ccw" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="btn btn-decrease" id="btnDecrease" aria-label="Decrease one">
+        <i data-lucide="minus" aria-hidden="true"></i>
+      </button>
+    </div>
+  </main>
   <script type="module" src="/src/main.js"></script>
 </body>
 
