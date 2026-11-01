@@ -1,10 +1,9 @@
 import './buttons.css';
-import IconPlus from './Icons';
-const Button = () => {
+const Button = ({icon: Icon, btnClass, btnArial}) => {
     return(
         <>
-        <button type="button" className='btn btn-increase' aria-label="Increase one">
-            <IconPlus />
+        <button type="button" className={`btn ${btnClass}`} aria-label={btnArial}>
+            <Icon />
         </button>
         </>
     )
