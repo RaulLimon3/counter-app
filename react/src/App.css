@@ -1,0 +1,46 @@
+@import url('./css/base/variables.css');
+
+#root {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 320px;
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.digit-number {
+    font-size: 64px;
+    text-align: center;
+}
+
+.cta-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+@media screen and (min-width: 576px) {
+    .cta-buttons {
+        flex-direction: row;
+    }
+}
