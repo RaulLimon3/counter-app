@@ -1,4 +1,3 @@
-
 import { Plus, Minus, RotateCcw } from 'lucide-react'
 import './App.css'
 import Button from './components/Button'
@@ -14,6 +13,8 @@ function App() {
 
   const resetCount = () => setCount(0);
 
+  const isDisabled = count === 0;
+
   return (
     <>
       <main className='container'>
@@ -23,8 +24,8 @@ function App() {
         </div>
         <div className='cta-buttons'>
           <Button icon={Plus} btnClass={'btn-increase'} btnArial={'Increase one'} action={increaseCount}/>
-          <Button icon={RotateCcw} btnClass={'btn-reset btn-disabled'} btnArial={'Reset value'} action={resetCount}/>
-          <Button icon={Minus} btnClass={'btn-decrease btn-disabled'} btnArial={'Decrease one'} action={decreaseCount}/>
+          <Button icon={RotateCcw} btnClass={`btn-reset ${isDisabled ? 'btn-disabled' : ''}`} btnArial={'Reset value'} action={resetCount} btnEnable={isDisabled}/>
+          <Button icon={Minus} btnClass={`btn-decrease ${isDisabled ? 'btn-disabled' : ''}`} btnArial={'Decrease one'} action={decreaseCount} btnEnable={isDisabled}/>
         </div>
       </main>
     </>
