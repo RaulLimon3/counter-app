@@ -1,12 +1,13 @@
 # ➕ Counter App
 
-A responsive and accessible counter app built with vanilla JavaScript, featuring increment, decrement, and reset controls.
+A responsive and accessible counter app implemented with both vanilla JavaScript and React. It features increment, decrement, and reset controls.
 
 ---
 
 ## 🚀 Live Demo
 
-🔗  [Try the Counter App here](https://counter-app-pearl-chi.vercel.app)
+🔗  [JavaScript Version](https://counter-app-pearl-chi.vercel.app)
+🔗  [React Version]()
 
 ---
 
@@ -17,6 +18,12 @@ A responsive and accessible counter app built with vanilla JavaScript, featuring
 ![Responsive Design](./screenshots/responsive-design.png)
 
 ![Interaction](./screenshots/app-interaction.png)
+
+---
+
+## Project Overview
+
+This project was first developed using Vanilla JavaScript and later migrated to React. The goal was to reinforce JavaScript fundamentals and understand how the same application can be structured using a component-based library.
 
 ---
 
@@ -43,6 +50,15 @@ A responsive and accessible counter app built with vanilla JavaScript, featuring
 - Lucide
 - Google Fonts
 
+### React
+
+- React
+- React DOM
+- JavaScript (ES modules and JSX)
+- CSS3
+- Vite
+- Lucide React
+
 ---
 
 ## 📁 Project Structure
@@ -54,6 +70,38 @@ counter-app/
 │   ├── app-interaction.png
 │   ├── mobile-view.png
 │   └── responsive-design.png
+├── react/
+│   ├── public/
+│   │   ├── android-chrome-192x192.png
+│   │   ├── android-chrome-512x512.png
+│   │   ├── apple-touch-icon.png
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── favicon.ico
+│   │   └── site.webmanifest
+│   ├── src/
+│   │   ├── assets/
+│   │   │   └── fonts/
+│   │   │       └── PressStart2P-Regular.ttf
+│   │   ├── components/
+│   │   │   ├── Button.jsx
+│   │   │   └── buttons.css
+│   │   ├── css/
+│   │   │   └── base/
+│   │   │       ├── font.css
+│   │   │       ├── reset.css
+│   │   │       └── variables.css
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── README.md
+│   └── vite.config.js
 └── vanilla/
     ├── .gitignore
     ├── index.html
@@ -89,6 +137,8 @@ counter-app/
 
 ## 🎯 Learning Objectives
 
+### JavaScript
+
 - Practice selecting and updating DOM elements with JavaScript.
 - Handle user interactions with event listeners.
 - Manage application state and keep the interface synchronized with it.
@@ -97,13 +147,20 @@ counter-app/
 - Apply semantic HTML and accessibility practices, including native disabled states and live announcements.
 - Organize JavaScript with ES modules and style the app with a mobile-first, responsive approach.
 
+### React
+
+- Manage component state with the `useState` hook.
+- Build reusable components and pass data and event handlers through props.
+- Render the interface declaratively based on the current state.
+- Derive button disabled states from the counter value.
+
 ---
 
 ## 🔮 Future Improvements
 
 - Add subtle animations and transitions to improve interaction feedback.
 - Add a dark mode.
-- Rebuild the app with React and Tailwind CSS.
+- Add Tailwind CSS to the React version.
 
 ---
 
@@ -125,7 +182,32 @@ counter-app/
 2. Navigate to the Vanilla project:
 
 ```bash
-   cd REPOSITORY/vanilla
+   cd counter-app/vanilla
+```
+
+3. Install dependencies:
+
+```bash
+   npm install
+```
+
+4. Start the development server:
+
+```bash
+   npm run dev
+```
+
+### React
+
+1. Clone the repository:
+
+```bash
+   git clone https://github.com/RaulLimon3/counter-app.git
+```
+2. Navigate to the React project:
+
+```bash
+   cd counter-app/react
 ```
 
 3. Install dependencies:
@@ -148,4 +230,4 @@ Developed by **Raúl Limón**
 Frontend Developer focused on building scalable and maintainable web applications while continuously improving JavaScript and frontend architecture skills.
 
 - GitHub: [RaulLimon3](https://github.com/RaulLimon3)  
-- LinkedIn: [Raúl Limón]https://www.linkedin.com/in/raul-limon-garcia/
+- LinkedIn: [Raúl Limón](https://www.linkedin.com/in/raul-limon-garcia/)
