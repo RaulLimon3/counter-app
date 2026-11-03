@@ -23,9 +23,9 @@ function App() {
           <output className='number' aria-live='polite'>{count}</output>
         </div>
         <div className='cta-buttons'>
-          <Button icon={Plus} btnClass={'btn-increase'} btnArial={'Increase one'} action={increaseCount}/>
-          <Button icon={RotateCcw} btnClass={`btn-reset ${isDisabled ? 'btn-disabled' : ''}`} btnArial={'Reset value'} action={resetCount} btnEnable={isDisabled}/>
-          <Button icon={Minus} btnClass={`btn-decrease ${isDisabled ? 'btn-disabled' : ''}`} btnArial={'Decrease one'} action={decreaseCount} btnEnable={isDisabled}/>
+          <Button icon={Plus} className={'btn-increase'} ariaLabel={'Increase one'} onClick={increaseCount}/>
+          <Button icon={RotateCcw} className={`btn-reset ${isDisabled ? 'btn-disabled' : ''}`} ariaLabel={'Reset value'} onClick={resetCount} disabled={isDisabled}/>
+          <Button icon={Minus} className={`btn-decrease ${isDisabled ? 'btn-disabled' : ''}`} ariaLabel={'Decrease one'} onClick={decreaseCount} disabled={isDisabled}/>
         </div>
       </main>
     </>

@@ -1,9 +1,9 @@
 import './buttons.css';
-const Button = ({icon: Icon, btnClass, btnArial, action, btnEnable}) => {
+const Button = ({icon: Icon, className, ariaLabel, onClick, disabled}) => {
     return(
         <>
-        <button type="button" className={`btn ${btnClass}`} aria-label={btnArial} onClick={action} disabled={btnEnable}>
-            <Icon />
+        <button type="button" className={`btn ${className}`} aria-label={ariaLabel} onClick={onClick} disabled={disabled}>
+            <Icon aria-hidden="true"/>
         </button>
         </>
     )
