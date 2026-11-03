@@ -7,7 +7,7 @@ A responsive and accessible counter app implemented with both vanilla JavaScript
 ## 🚀 Live Demo
 
 🔗  [JavaScript Version](https://counter-app-pearl-chi.vercel.app)
-🔗  [React Version]()
+🔗  [React Version](https://counter-app-react-peach.vercel.app)
 
 ---
 
